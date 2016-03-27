@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/RL_Top"
+        android:layout_marginBottom="40dp"
+        android:background="#009688">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_TotalCredits"
+            android:text="TOTAL ADURCUP CREDITS RECIEVED"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_amount"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="0"
+            android:textSize="70sp"
+            android:layout_below="@+id/tv_TotalCredits"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_INR"
+            android:layout_below="@id/tv_amount"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="INR"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="Total of INR 3,400 can be recieved this month."/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Panel1"
+        android:layout_below="@id/RL_Top">
+
+        <ImageView
+            android:id="@+id/icon_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="20dp"
+            android:background="#669933" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/icon_1"
+            android:text="Total images sent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:id="@+id/tv1"
+            android:text="0" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/Panel1"
+        android:background="#f5f5f5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Panel2"
+        android:layout_below="@id/Panel1">
+
+        <ImageView
+            android:id="@+id/icon_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="20dp"
+            android:background="#ff6600" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/icon_2"
+            android:text="Image of Morning Bill" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="#006699"
+android:id="@+id/tvmorning"
+            android:text="Done!" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/Panel2"
+        android:background="#f5f5f5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Panel3"
+        android:layout_below="@id/Panel2">
+
+        <ImageView
+            android:id="@+id/icon_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="20dp"
+            android:background="#0099cc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Image of Evening Bill"
+            android:layout_toRightOf="@+id/icon_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="#cc3333"
+            android:text="Not received"
+            android:id="@+id/textView" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="#cc3333"
+            android:text="Not received"
+            android:id="@+id/textView1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Panel3"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="#ccc"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/rounded_timestamp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:id="@+id/timeStampHint"
+                android:background="@drawable/rounded_timestamp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:textColor="#999"
+                android:text="Images Clicked"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/camera123"
+        android:padding="14dp"
+        android:src="@drawable/camera_icon"
+        android:background="@drawable/rounded_corners"
+        android:layout_above="@+id/Panel1"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgview123"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toLeftOf="@+id/camera123"
+        android:layout_toStartOf="@+id/camera123" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignRight="@+id/camera123"
+        android:layout_alignEnd="@+id/camera123" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
